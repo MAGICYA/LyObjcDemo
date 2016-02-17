@@ -54,3 +54,5 @@ fastlane/screenshots
 *.xcuserstate
 
 LyObjcDemo.xcodeproj/project.xcworkspace/xcuserdata/wly1.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcuserstate
