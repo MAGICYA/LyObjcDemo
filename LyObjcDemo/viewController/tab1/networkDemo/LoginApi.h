@@ -10,5 +10,4 @@
 
 @interface LoginApi : LyRequest
 -(void)LoginApiWithUserName:(NSString *)userName passWord:(NSString*)password;
--(void)GetWithParams:(NSDictionary*)params;
 @end

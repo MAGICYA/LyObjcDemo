@@ -14,5 +14,6 @@ typedef void (^LyHTTPBasicBlock)(id);
 @property (copy, nonatomic) LyHTTPBasicBlock successBlock;
 @property (copy, nonatomic) LyHTTPBasicBlock failBlock;
 
--(void)ApiWithParams:(NSDictionary*)params;
+-(void)GetApiWithParams:(NSDictionary*)params;
+-(void)PostApiWithParams:(NSDictionary*)params;
 @end

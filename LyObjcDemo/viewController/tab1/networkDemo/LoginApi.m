@@ -12,12 +12,8 @@
 -(void)LoginApiWithUserName:(NSString *)userName passWord:(NSString*)password
 {
     NSDictionary *dic = @{@"userName":userName, @"password":password};
-    [self GetWithParams:dic];
+    [super PostApiWithParams:dic];
     return;
 }
--(void)GetWithParams:(NSDictionary*)params
-{
-    [super ApiWithParams:params];
-    return;
-}
+
 @end
