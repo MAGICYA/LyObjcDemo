@@ -38,11 +38,13 @@
     [box addSubview:label];
     box.onTap = ^{
         LoginApi *loginApi = [[LoginApi alloc] init];
-        loginApi.successBlock = ^(id data){
-            NSLog(@"LgoinApi Success %@",data);
+        __weak LoginApi *weakLoginApi = loginApi;
+        
+        loginApi.successBlock = ^(){
+            NSLog(@"LgoinApi Success %@",weakLoginApi.responseString);
         };
-        loginApi.failBlock = ^(id data){
-            NSLog(@"LgoinApi fail %@",data);
+        loginApi.failBlock = ^(){
+            NSLog(@"LgoinApi fail %@",weakLoginApi.error);
         };
         [loginApi LoginApiWithUserName:@"13800138000" passWord:@"win100"];
         NSLog(@"after");

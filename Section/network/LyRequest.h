@@ -8,9 +8,9 @@
 
 #import "ASIFormDataRequest.h"
 
-typedef void (^LyHTTPBasicBlock)(id);
+typedef void (^LyHTTPBasicBlock)(void);
 
-@interface LyRequest : NSObject
+@interface LyRequest : ASIFormDataRequest
 @property (copy, nonatomic) LyHTTPBasicBlock successBlock;
 @property (copy, nonatomic) LyHTTPBasicBlock failBlock;
 

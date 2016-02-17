@@ -14,12 +14,10 @@
     getRequest.requestMethod = @"GET";
     __weak ASIFormDataRequest *weakGetRequest = getRequest;
     [getRequest setCompletionBlock:^{
-        _successBlock(weakGetRequest.responseString);
-        NSLog(@"%@",weakGetRequest.responseString);
+        _successBlock();
     }];
     [getRequest setFailedBlock:^{
-        _failBlock(weakGetRequest.error);
-        NSLog(@"%@",weakGetRequest.error);
+        _failBlock();
     }];
     [getRequest startAsynchronous];
     return;
