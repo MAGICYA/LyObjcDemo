@@ -12,6 +12,8 @@
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
 
+#import "LoginApi.h"
+
 @interface networkASIDemoViewController ()
 
 @end
@@ -35,17 +37,15 @@
     label.text = @"HTTP-GET";
     [box addSubview:label];
     box.onTap = ^{
-        ASIFormDataRequest *getRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:@"http://h.mama100.com/mobile/login/v2loginActionlogin.action?opno=13800138000&width=640&brand=Apple&os=iOS&devid=a903ba2f3ceabd9fc9550b1d7539f9ac&dpi=326&ver=25&height=1136&pwd=3472f86b53ea536fd47d3aa8a212d1ea&osver=9.2&vernm=5.1.0&model=x86_64&tsno=1455462422.872019"]];
-        getRequest.requestMethod = @"GET";
-        __weak ASIFormDataRequest *weakGetRequest = getRequest;
-        [getRequest setCompletionBlock:^{
-            NSLog(@"completion %@",weakGetRequest.responseString);
-        }];
-        [getRequest setFailedBlock:^{
-            NSLog(@"fail %@",weakGetRequest.error);
-        }];
-        [getRequest startAsynchronous];
-        
+        LoginApi *loginApi = [[LoginApi alloc] init];
+        loginApi.successBlock = ^(id data){
+            NSLog(@"LgoinApi Success %@",data);
+        };
+        loginApi.failBlock = ^(id data){
+            NSLog(@"LgoinApi fail %@",data);
+        };
+        [loginApi LoginApiWithUserName:@"13800138000" passWord:@"win100"];
+        NSLog(@"after");
     };
     [scroll.boxes addObject:box];
     
