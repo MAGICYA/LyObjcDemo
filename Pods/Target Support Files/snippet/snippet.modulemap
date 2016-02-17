@@ -1,0 +1,6 @@
+framework module snippet {
+  umbrella header "snippet-umbrella.h"
+
+  export *
+  module * { export * }
+}

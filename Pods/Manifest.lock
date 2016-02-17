@@ -1,0 +1,186 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - AsyncDisplayKit (1.2.3):
+    - AsyncDisplayKit/ASDealloc2MainObject (= 1.2.3)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.2.3)
+  - AVOSCloud (3.1.4)
+  - AwesomeMenu (1.0.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - ComponentKit (0.13)
+  - DACircularProgress (2.3.1)
+  - DeepLinkKit (1.1.0)
+  - DXFPSLabel (0.1.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - MBProgressHUD (0.9.1)
+  - MGBoxKit (8.0.0):
+    - MGEvents
+    - MGMushParser
+  - MGEvents (1.0.3)
+  - MGMushParser (1.2.1)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - pop (1.0.8)
+  - QBImagePickerController (3.2.0)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RRFPSBar (0.0.1)
+  - SDCycleScrollView (1.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - snippet (1.1.1)
+  - ZipArchive (1.4.0)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.0)
+  - ASIHTTPRequest (~> 1.8.2)
+  - AsyncDisplayKit (~> 1.2.3)
+  - AVOSCloud (~> 3.1.4)
+  - AwesomeMenu (~> 1.0.0)
+  - BlocksKit (~> 2.2.5)
+  - ComponentKit (~> 0.13)
+  - DACircularProgress (~> 2.3.1)
+  - DeepLinkKit (~> 1.1.0)
+  - DXFPSLabel (~> 0.1.0)
+  - FMDB (~> 2.5)
+  - libextobjc (~> 0.4.1)
+  - MBProgressHUD (~> 0.9.1)
+  - MGBoxKit (~> 8.0.0)
+  - MWPhotoBrowser (~> 2.1.1)
+  - pop (~> 1.0.8)
+  - QBImagePickerController (~> 3.2.0)
+  - ReactiveCocoa (~> 2.5)
+  - RRFPSBar (~> 0.0.1)
+  - SDCycleScrollView (~> 1.3)
+  - SDWebImage (~> 3.7.3)
+  - snippet (~> 1.1.1)
+  - ZipArchive (~> 1.4.0)
+  - ZXingObjC (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  AsyncDisplayKit: 5c8f38225f7478e39c48196cec0dd0d2ac3455ed
+  AVOSCloud: 2be1640178facaac8343d67ed4d5348f4dffecd7
+  AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  ComponentKit: b79a11f258ef71c44e3be976e4929c6eb4144c58
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DeepLinkKit: 3979713c8a0b6bd3259fb7917e572acf56645a35
+  DXFPSLabel: a45eaeab2709b954998c7926c7334d7ef098fb00
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MGBoxKit: ec903e5c62d1b11481d2b3b8a7d5c5c6a9355b65
+  MGEvents: 739ea3e582a8df05bd1044500c7fb6d8f7aff5c8
+  MGMushParser: e5f80531a96a086694103592db4cbad3ffd78fa5
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  QBImagePickerController: 75b3857b1307a3c01ce486559bc294f802ddec6c
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RRFPSBar: 32fd2b11fb3d6ea90dc9a1424f964ea3851cd091
+  SDCycleScrollView: 90e43636fcc8e6a7f74e8b64d87418a8e96549b4
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  snippet: 75a27db4b735db7098944d26c95dc3b1fe29d7d8
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+
+COCOAPODS: 0.39.0

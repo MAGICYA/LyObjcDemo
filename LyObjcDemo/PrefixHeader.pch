@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  LyObjcDemo
+//
+//  Created by wly1 on 15/10/30.
+//
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <objc/runtime.h>
+
+
+//macros
+#import "MacroUtils.h"
+
+
+#import "MGBoxKit/MGBox.h"
+#import "MGBoxKit/MGScrollView.h"
+#import "BlocksKit/BlocksKit+UIKit.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <DeepLinkKit/DeepLinkKit.h>
+#import "MBProgressHUD/MBProgressHUD.h"
+#import "LyDeepLink.h"
+
+#endif
+
+#ifndef SCREEN_WIDTH
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#endif
+#ifndef SCREEN_HEIGHT
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#endif
+#endif /* PrefixHeader_pch */
