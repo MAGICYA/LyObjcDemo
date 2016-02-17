@@ -54,7 +54,6 @@
 		9A050A541C744C0800D4ACDC /* LyDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A531C744C0800D4ACDC /* LyDeepLink.m */; };
 		9A050A571C7453F200D4ACDC /* LyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A561C7453F200D4ACDC /* LyRequest.m */; };
 		9A050A5A1C74542600D4ACDC /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A591C74542600D4ACDC /* LoginApi.m */; };
-		9A050A5D1C746EC100D4ACDC /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A5C1C746EC100D4ACDC /* test.m */; };
 		9AEEC34A1C74458800A411C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEC3491C74458800A411C1 /* main.m */; };
 		9AEEC3581C74458800A411C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEC3571C74458800A411C1 /* Assets.xcassets */; };
 		9AEEC3661C74458800A411C1 /* LyObjcDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEC3651C74458800A411C1 /* LyObjcDemoTests.m */; };
@@ -177,8 +176,6 @@
 		9A050A561C7453F200D4ACDC /* LyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyRequest.m; sourceTree = "<group>"; };
 		9A050A581C74542600D4ACDC /* LoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
 		9A050A591C74542600D4ACDC /* LoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
-		9A050A5B1C746EC100D4ACDC /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		9A050A5C1C746EC100D4ACDC /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		9AEEC3451C74458800A411C1 /* LyObjcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyObjcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEC3491C74458800A411C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AEEC3571C74458800A411C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -460,8 +457,6 @@
 				9A050A1D1C74495200D4ACDC /* testAFNetworkingViewC.m */,
 				9A050A551C7453F200D4ACDC /* LyRequest.h */,
 				9A050A561C7453F200D4ACDC /* LyRequest.m */,
-				9A050A5B1C746EC100D4ACDC /* test.h */,
-				9A050A5C1C746EC100D4ACDC /* test.m */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -829,7 +824,6 @@
 				9A0509EB1C74494800D4ACDC /* OpenURLViewController.m in Sources */,
 				9A050A431C74495200D4ACDC /* LoginSuccessViewController.m in Sources */,
 				9A0509F31C74494800D4ACDC /* WebViewRootController.m in Sources */,
-				9A050A5D1C746EC100D4ACDC /* test.m in Sources */,
 				9A050A4E1C744BBF00D4ACDC /* LyViewController.m in Sources */,
 				9A0509E91C74494800D4ACDC /* BlockTestViewController.m in Sources */,
 				9A0509E61C74494800D4ACDC /* AutoCycleScrollViewContrtoller.m in Sources */,

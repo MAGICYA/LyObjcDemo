@@ -15,11 +15,9 @@
     __weak ASIFormDataRequest *weakGetRequest = getRequest;
     [getRequest setCompletionBlock:^{
         _successBlock(weakGetRequest.responseString);
-        NSLog(@"%@",weakGetRequest.responseString);
     }];
     [getRequest setFailedBlock:^{
         _failBlock(weakGetRequest.error);
-        NSLog(@"%@",weakGetRequest.error);
     }];
     [getRequest startAsynchronous];
     return;
