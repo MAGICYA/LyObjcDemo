@@ -54,6 +54,8 @@
 		9A050A541C744C0800D4ACDC /* LyDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A531C744C0800D4ACDC /* LyDeepLink.m */; };
 		9A050A571C7453F200D4ACDC /* LyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A561C7453F200D4ACDC /* LyRequest.m */; };
 		9A050A5A1C74542600D4ACDC /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A591C74542600D4ACDC /* LoginApi.m */; };
+		9A53BECF1C75A7E900E97463 /* LyIPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A53BECE1C75A7E900E97463 /* LyIPConfig.m */; };
+		9A53BED21C75B35B00E97463 /* LyAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A53BED11C75B35B00E97463 /* LyAppConfig.m */; };
 		9AEEC34A1C74458800A411C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEC3491C74458800A411C1 /* main.m */; };
 		9AEEC3581C74458800A411C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEC3571C74458800A411C1 /* Assets.xcassets */; };
 		9AEEC3661C74458800A411C1 /* LyObjcDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEC3651C74458800A411C1 /* LyObjcDemoTests.m */; };
@@ -176,6 +178,10 @@
 		9A050A561C7453F200D4ACDC /* LyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyRequest.m; sourceTree = "<group>"; };
 		9A050A581C74542600D4ACDC /* LoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
 		9A050A591C74542600D4ACDC /* LoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
+		9A53BECD1C75A7E900E97463 /* LyIPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyIPConfig.h; sourceTree = "<group>"; };
+		9A53BECE1C75A7E900E97463 /* LyIPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyIPConfig.m; sourceTree = "<group>"; };
+		9A53BED01C75B35B00E97463 /* LyAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyAppConfig.h; sourceTree = "<group>"; };
+		9A53BED11C75B35B00E97463 /* LyAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyAppConfig.m; sourceTree = "<group>"; };
 		9AEEC3451C74458800A411C1 /* LyObjcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyObjcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEC3491C74458800A411C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AEEC3571C74458800A411C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -315,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				9A0509C51C74494800D4ACDC /* base */,
+				9A53BED01C75B35B00E97463 /* LyAppConfig.h */,
+				9A53BED11C75B35B00E97463 /* LyAppConfig.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -457,6 +465,8 @@
 				9A050A1D1C74495200D4ACDC /* testAFNetworkingViewC.m */,
 				9A050A551C7453F200D4ACDC /* LyRequest.h */,
 				9A050A561C7453F200D4ACDC /* LyRequest.m */,
+				9A53BECD1C75A7E900E97463 /* LyIPConfig.h */,
+				9A53BECE1C75A7E900E97463 /* LyIPConfig.m */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -811,12 +821,14 @@
 				9A0509F71C74494800D4ACDC /* v2loginActionlogin.m in Sources */,
 				9A0509FB1C74494800D4ACDC /* testA.m in Sources */,
 				9A050A3A1C74495200D4ACDC /* DeepLinkListViewController.m in Sources */,
+				9A53BED21C75B35B00E97463 /* LyAppConfig.m in Sources */,
 				9A050A421C74495200D4ACDC /* testAFNetworkingViewC.m in Sources */,
 				9A0509F41C74494800D4ACDC /* BaseModel.m in Sources */,
 				9A050A3F1C74495200D4ACDC /* testImageViewController.m in Sources */,
 				9A0509F61C74494800D4ACDC /* Product.m in Sources */,
 				9A0509E71C74494800D4ACDC /* networkASIDemoViewController.m in Sources */,
 				9A050A3D1C74495200D4ACDC /* ProductDetailViewController.m in Sources */,
+				9A53BECF1C75A7E900E97463 /* LyIPConfig.m in Sources */,
 				9A050A461C74495200D4ACDC /* LoginVCViewModel.m in Sources */,
 				9A0509EC1C74494800D4ACDC /* PriceTotalViewController.m in Sources */,
 				9A0509FD1C74494800D4ACDC /* testBd.m in Sources */,

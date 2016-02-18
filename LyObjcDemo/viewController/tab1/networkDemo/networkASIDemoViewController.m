@@ -34,7 +34,7 @@
     box.frame = CGRectMake(0, 0, 320, 40);
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 5, 300, 30)];
     label.backgroundColor = [UIColor greenColor];
-    label.text = @"HTTP-GET";
+    label.text = @"LyRequest-GET";
     [box addSubview:label];
     box.onTap = ^{
         LoginApi *loginApi = [[LoginApi alloc] init];
@@ -45,7 +45,6 @@
             NSLog(@"LgoinApi fail %@",data);
         };
         [loginApi LoginApiWithUserName:@"13800138000" passWord:@"win100"];
-        NSLog(@"after");
     };
     [scroll.boxes addObject:box];
     

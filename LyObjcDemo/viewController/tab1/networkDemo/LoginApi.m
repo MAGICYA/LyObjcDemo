@@ -11,8 +11,8 @@
 @implementation LoginApi
 -(void)LoginApiWithUserName:(NSString *)userName passWord:(NSString*)password
 {
-    NSDictionary *dic = @{@"userName":userName, @"password":password};
-    [super PostApiWithParams:dic];
+    self.apiURL = @"mobile/login/v2loginActionlogin.action";
+    [self GetApiWithParams:@{@"opno":userName, @"pwd":@"3472f86b53ea536fd47d3aa8a212d1ea"}];
     return;
 }
 

@@ -13,6 +13,8 @@ typedef void (^LyHTTPBasicBlock)(id);
 @interface LyRequest : NSObject
 @property (copy, nonatomic) LyHTTPBasicBlock successBlock;
 @property (copy, nonatomic) LyHTTPBasicBlock failBlock;
+@property (strong, nonatomic) NSString *apiURL;
+@property (strong, nonatomic) NSMutableString *strURL;
 
 -(void)GetApiWithParams:(NSDictionary*)params;
 -(void)PostApiWithParams:(NSDictionary*)params;
