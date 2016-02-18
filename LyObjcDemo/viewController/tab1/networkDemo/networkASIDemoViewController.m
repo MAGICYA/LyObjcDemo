@@ -54,6 +54,47 @@
     box.frame = CGRectMake(0, 0, 320, 40);
     label = [[UILabel alloc] initWithFrame:CGRectMake(20, 5, 300, 30)];
     label.backgroundColor = [UIColor greenColor];
+    label.text = @"ASI HTTP Post Syn";
+    [box addSubview:label];
+    box.onTap = ^{
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://192.168.115.4:9580/mobile/myterminal/terminalAccount.action"]];
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+        [request setRequestMethod:@"POST"];
+       
+        
+        [request setPostValue:@"7c3f9a38cf36941fee1f200a7c48ad78" forKey:@"devid"];
+        [request setPostValue:@"ea3b3ac8744b1da928a0d5acd4790cef" forKey:@"token"];
+        [request setPostValue:@"199999" forKey:@"loginTcd"];
+        [request setPostValue:@"1455768018.004683" forKey:@"tsno"];
+        [request setPostValue:@"200000101126" forKey:@"accountId"];
+        [request setPostValue:@"1" forKey:@"pageNo"];
+        [request setPostValue:@"20" forKey:@"pageSize"];
+        [request setPostValue:@"" forKey:@"tcd"];
+        [request setPostValue:@"" forKey:@"type"];
+//        NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+//        [dict setObject:[self getStringIgnoreNil:tcd] forKey:@"tcd"];
+//        [dict setObject:[self getStringIgnoreNil:type] forKey:@"type"];
+//        [dict setObject:[self getStringIgnoreNil:pageNo] forKey:@"pageNo"];
+//        [dict setObject:[self getStringIgnoreNil:pageSize] forKey:@"pageSize"];
+        
+        [request startSynchronous];
+        NSError *error = [request error];
+        if (error) {
+            NSLog(@"error：%@",error);
+        }
+        else
+        {
+            NSLog(@"complete : %@",request.responseString);
+        }
+    };
+        
+    [scroll.boxes addObject:box];
+    
+    box = [MGBox box];
+    box.backgroundColor = [UIColor redColor];
+    box.frame = CGRectMake(0, 0, 320, 40);
+    label = [[UILabel alloc] initWithFrame:CGRectMake(20, 5, 300, 30)];
+    label.backgroundColor = [UIColor greenColor];
     label.text = @"CFStream Read";
     [box addSubview:label];
     box.onTap = ^{
