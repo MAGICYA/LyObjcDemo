@@ -27,6 +27,20 @@
 #import "testB.h"
 #import "testBd.h"
 
+#define XCODE_COLORS_ESCAPE_MAC @"\033["
+#define XCODE_COLORS_ESCAPE_IOS @"\xC2\xA0["
+
+#if TARGET_OS_IPHONE
+#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_IOS
+#else
+#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_MAC
+#endif
+
+#define XCODE_COLORS_RESET_FG  XCODE_COLORS_ESCAPE @"fg;" // Clear any foreground color
+#define XCODE_COLORS_RESET_BG  XCODE_COLORS_ESCAPE @"bg;" // Clear any background color
+#define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"   // Clear any foreground or background color
+
+#define LogBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
 
 @interface AppDelegate ()
 
@@ -137,6 +151,39 @@
 //    self.router[@"/event/:event_id"] = [EventRouteHandler class];
     ///////////////////////////////////
     
+    
+    ////////////////////DDLog///////////////////////
+    // Enable XcodeColors
+    setenv("XcodeColors", "YES", 0);
+    
+    // Standard lumberjack initialization
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    // And then enable colors
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    
+    // Check out default colors:
+    // Error : Red
+    // Warn  : Orange
+    
+    DDLogError(@"Paper jam");                              // Red
+    DDLogWarn(@"Toner is low");                            // Orange
+    DDLogInfo(@"Warming up printer (pre-customization)");  // Default (black)
+    DDLogVerbose(@"Intializing protcol x26");              // Default (black)
+    
+    // Now let's do some customization:
+    // Info  : Pink
+    
+#if TARGET_OS_IPHONE
+    UIColor *pink = [UIColor colorWithRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
+#else
+    NSColor *pink = [NSColor colorWithCalibratedRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
+#endif
+    
+    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:DDLogFlagInfo];
+    
+    DDLogInfo(@"Warming up printer (post-customization)"); // Pink !
+    ////////////////////DDLog///////////////////////
     return YES;
     
 }

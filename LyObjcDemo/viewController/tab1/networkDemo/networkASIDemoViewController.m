@@ -13,6 +13,7 @@
 #import "ASIFormDataRequest.h"
 
 #import "LoginApi.h"
+#import "LoginModel.h"
 
 @interface networkASIDemoViewController ()
 
@@ -39,10 +40,29 @@
     box.onTap = ^{
         LoginApi *loginApi = [[LoginApi alloc] init];
         loginApi.successBlock = ^(id data){
-            NSLog(@"LgoinApi Success %@",data);
+            DDLogInfo(@"LgoinApi Success \n %@",data);
+            
+            
+            NSDictionary *tmpDic = [NSJSONSerialization JSONObjectWithData:
+                                    [data dataUsingEncoding:NSUTF8StringEncoding]
+                                                                   options:nil
+                                                                     error:nil];
+            DDLogInfo(@"isValidJSONObject \n %@",tmpDic);
+//            NSArray *tmlArr = [LoginModel objectArrayWithKeyValuesArray:tmpDic[@"mobResponse"][@"tmls"]];
+//            for (LoginModel *p in tmlArr) {
+//                DDLogInfo(@"LgoinApi Success  %@",p.tn);
+//            }
+            LoginReqModel *req = [[LoginReqModel alloc] initWithString:data error:nil];
+            NSInteger i = 0 ;
+            LoginMobReq *req1 = [[LoginMobReq alloc] initWithString:data error:nil];
+            NSArray *tmpArr = [NSArray arrayWithArray:req.mobResponse.tmls];
+            for (LoginModel *p in tmpArr) {
+                DDLogInfo(@"LgoinApi Success  %@",p.tn);
+            }
+            
         };
         loginApi.failBlock = ^(id data){
-            NSLog(@"LgoinApi fail %@",data);
+            DDLogInfo(@"LgoinApi fail \n %@",data);
         };
         [loginApi LoginApiWithUserName:@"13800138000" passWord:@"win100"];
     };

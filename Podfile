@@ -23,6 +23,9 @@ pod 'ASIHTTPRequest', '~> 1.8.2'
 pod 'SDCycleScrollView','~> 1.3' #可加载本地和远程图片，支持占位图设置。缺点，只支持图片设置，只支持左右滑动
 pod 'FMDB', '~> 2.5'
 pod 'DeepLinkKit', '~> 1.1.0'
+pod 'CocoaLumberjack', '~> 2.0.1'
+pod 'MJExtension', '~> 2.5.12'
+pod 'JSONModel', '~> 1.1.0'
 
 use_frameworks!
 #pod 'MBMvc', '~> 1.2.0'

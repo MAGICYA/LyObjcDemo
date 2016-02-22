@@ -53,6 +53,14 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
   - ComponentKit (0.13)
   - DACircularProgress (2.3.1)
   - DeepLinkKit (1.1.0)
@@ -62,6 +70,7 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - JSONModel (1.1.0)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -103,6 +112,7 @@ PODS:
     - MGMushParser
   - MGEvents (1.0.3)
   - MGMushParser (1.2.1)
+  - MJExtension (2.5.12)
   - MWPhotoBrowser (2.1.1):
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
@@ -135,14 +145,17 @@ DEPENDENCIES:
   - AVOSCloud (~> 3.1.4)
   - AwesomeMenu (~> 1.0.0)
   - BlocksKit (~> 2.2.5)
+  - CocoaLumberjack (~> 2.0.1)
   - ComponentKit (~> 0.13)
   - DACircularProgress (~> 2.3.1)
   - DeepLinkKit (~> 1.1.0)
   - DXFPSLabel (~> 0.1.0)
   - FMDB (~> 2.5)
+  - JSONModel (~> 1.1.0)
   - libextobjc (~> 0.4.1)
   - MBProgressHUD (~> 0.9.1)
   - MGBoxKit (~> 8.0.0)
+  - MJExtension (~> 2.5.12)
   - MWPhotoBrowser (~> 2.1.1)
   - pop (~> 1.0.8)
   - QBImagePickerController (~> 3.2.0)
@@ -161,16 +174,19 @@ SPEC CHECKSUMS:
   AVOSCloud: 2be1640178facaac8343d67ed4d5348f4dffecd7
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   ComponentKit: b79a11f258ef71c44e3be976e4929c6eb4144c58
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DeepLinkKit: 3979713c8a0b6bd3259fb7917e572acf56645a35
   DXFPSLabel: a45eaeab2709b954998c7926c7334d7ef098fb00
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MGBoxKit: ec903e5c62d1b11481d2b3b8a7d5c5c6a9355b65
   MGEvents: 739ea3e582a8df05bd1044500c7fb6d8f7aff5c8
   MGMushParser: e5f80531a96a086694103592db4cbad3ffd78fa5
+  MJExtension: 5ab633484e431f777387c70b676c80f993361f1b
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   QBImagePickerController: 75b3857b1307a3c01ce486559bc294f802ddec6c
