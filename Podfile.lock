@@ -133,6 +133,9 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - snippet (1.1.1)
+  - YYKit (0.2.0):
+    - YYKit/no-arc (= 0.2.0)
+  - YYKit/no-arc (0.2.0)
   - ZipArchive (1.4.0)
   - ZXingObjC (3.1.0):
     - ZXingObjC/All (= 3.1.0)
@@ -164,6 +167,7 @@ DEPENDENCIES:
   - SDCycleScrollView (~> 1.3)
   - SDWebImage (~> 3.7.3)
   - snippet (~> 1.1.1)
+  - YYKit (~> 0.2.0)
   - ZipArchive (~> 1.4.0)
   - ZXingObjC (~> 3.1.0)
 
@@ -196,6 +200,7 @@ SPEC CHECKSUMS:
   SDCycleScrollView: 90e43636fcc8e6a7f74e8b64d87418a8e96549b4
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   snippet: 75a27db4b735db7098944d26c95dc3b1fe29d7d8
+  YYKit: 1bd14a07d96fb80d08471a8a07c5e3425a3d2a45
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 

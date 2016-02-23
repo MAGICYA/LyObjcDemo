@@ -11,8 +11,10 @@
 @implementation LoginModel
 
 @end
+@implementation LoginMobReq
 
-@implementation LoginReqModel
+@end
+@implementation LoginmobResponse
 
 @end
 

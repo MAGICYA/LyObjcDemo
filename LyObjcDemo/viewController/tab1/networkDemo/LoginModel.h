@@ -22,7 +22,7 @@
 @property (strong, nonatomic) NSArray<LoginModel>* tmls;
 @end
 
-@interface LoginReqModel : JSONModel
+@interface LoginmobResponse : JSONModel
 @property (strong, nonatomic) LoginMobReq* mobResponse;
 //@property (strong, nonatomic) NSArray<LoginModel>* tmls;
 @end
