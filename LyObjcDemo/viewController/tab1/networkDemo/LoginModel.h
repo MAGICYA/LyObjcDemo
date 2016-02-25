@@ -27,4 +27,21 @@
 //@property (strong, nonatomic) NSArray<LoginModel>* tmls;
 @end
 
+//@protocol yyLoginModel
+//@end
+@interface yyLoginModel : NSObject
+@property (strong, nonatomic) NSString *accountId;
+@property (strong, nonatomic) NSString *hq;
+@property (strong, nonatomic) NSString *tc;
+@property (strong, nonatomic) NSString *tn;
+@end
+
+@interface yyLoginMobReq : NSObject
+@property (strong, nonatomic) NSString* code;
+@property (strong, nonatomic) NSArray* tmls;
+@end
+
+@interface yyLoginmobResponse : NSObject
+@property (strong, nonatomic) yyLoginMobReq* mobResponse;
+@end
 

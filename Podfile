@@ -26,7 +26,7 @@ pod 'DeepLinkKit', '~> 1.1.0'
 pod 'CocoaLumberjack', '~> 2.0.1'
 pod 'MJExtension', '~> 2.5.12'
 pod 'JSONModel', '~> 1.1.0'
-pod 'YYKit', '~> 0.2.0'
+#pod 'YYKit', '~> 0.2.0'
 
 use_frameworks!
 #pod 'MBMvc', '~> 1.2.0'

@@ -19,7 +19,7 @@
 //macros
 #import "MacroUtils.h"
 
-
+//#import "YYKit.h"
 #import "MGBoxKit/MGBox.h"
 #import "MGBoxKit/MGScrollView.h"
 #import "BlocksKit/BlocksKit+UIKit.h"
@@ -31,6 +31,7 @@
 #import "LyDeepLink.h"
 #import "MJExtension.h"
 #import "JSONModelLib.h"
+#import "YYModel.h"
 
 
 

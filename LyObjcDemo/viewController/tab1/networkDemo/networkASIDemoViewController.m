@@ -41,12 +41,22 @@
         LoginApi *loginApi = [[LoginApi alloc] init];
         loginApi.successBlock = ^(id data){
             DDLogInfo(@"LgoinApi Success \n %@",data);
-            //JSONModel
-            LoginmobResponse *req = [[LoginmobResponse alloc] initWithString:data error:nil];
-            for (LoginModel *p in req.mobResponse.tmls) {
-                DDLogInfo(@"LgoinApi Success  %@",p.tn);
+            //YYModel
+            yyLoginmobResponse *req1 = [yyLoginmobResponse yy_modelWithJSON:data];
+            for (LoginModel *p in req1.mobResponse.tmls) {
+                DDLogInfo(@"LgoinApi Success ==yyLoginmobResponse %@",p.tn);
             }
-            //JSONModel
+            //YYModel
+            NSLog(@"");
+//            //JSONModel
+//            LoginmobResponse *req = [[LoginmobResponse alloc] initWithString:data error:nil];
+//            for (LoginModel *p in req.mobResponse.tmls) {
+//                DDLogInfo(@"LgoinApi Success ==LoginmobResponse   %@",p.tn);
+//            }
+//            //JSONModel
+            
+            
+            
         };
         loginApi.failBlock = ^(id data){
             DDLogInfo(@"LgoinApi fail \n %@",data);

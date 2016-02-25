@@ -18,3 +18,15 @@
 
 @end
 
+@implementation yyLoginModel
+
+@end
+
+@implementation yyLoginMobReq
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"tmls" : [yyLoginModel class]};
+}
+@end
+@implementation yyLoginmobResponse
+
+@end

@@ -54,6 +54,8 @@
 		9A050A541C744C0800D4ACDC /* LyDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A531C744C0800D4ACDC /* LyDeepLink.m */; };
 		9A050A571C7453F200D4ACDC /* LyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A561C7453F200D4ACDC /* LyRequest.m */; };
 		9A050A5A1C74542600D4ACDC /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A050A591C74542600D4ACDC /* LoginApi.m */; };
+		9A2EF5031C7D4AC9006404BE /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2EF4FF1C7D4AC9006404BE /* NSObject+YYModel.m */; };
+		9A2EF5041C7D4AC9006404BE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2EF5011C7D4AC9006404BE /* YYClassInfo.m */; };
 		9A53BECF1C75A7E900E97463 /* LyIPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A53BECE1C75A7E900E97463 /* LyIPConfig.m */; };
 		9A53BED21C75B35B00E97463 /* LyAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A53BED11C75B35B00E97463 /* LyAppConfig.m */; };
 		9A5BF2931C7AF20800D26778 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BF2921C7AF20800D26778 /* LoginModel.m */; };
@@ -179,6 +181,11 @@
 		9A050A561C7453F200D4ACDC /* LyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyRequest.m; sourceTree = "<group>"; };
 		9A050A581C74542600D4ACDC /* LoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
 		9A050A591C74542600D4ACDC /* LoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
+		9A2EF4FE1C7D4AC9006404BE /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		9A2EF4FF1C7D4AC9006404BE /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		9A2EF5001C7D4AC9006404BE /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		9A2EF5011C7D4AC9006404BE /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		9A2EF5021C7D4AC9006404BE /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		9A53BECD1C75A7E900E97463 /* LyIPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyIPConfig.h; sourceTree = "<group>"; };
 		9A53BECE1C75A7E900E97463 /* LyIPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyIPConfig.m; sourceTree = "<group>"; };
 		9A53BED01C75B35B00E97463 /* LyAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyAppConfig.h; sourceTree = "<group>"; };
@@ -510,6 +517,7 @@
 		9A050A291C74495200D4ACDC /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9A2EF4FD1C7D4AC9006404BE /* YYModel */,
 				9A050A2A1C74495200D4ACDC /* ACL */,
 				9A050A2D1C74495200D4ACDC /* bee_sandbox */,
 				9A050A301C74495200D4ACDC /* NSStringWrapper */,
@@ -552,6 +560,18 @@
 				9A050A361C74495200D4ACDC /* VersionCompare.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		9A2EF4FD1C7D4AC9006404BE /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A2EF4FE1C7D4AC9006404BE /* NSObject+YYModel.h */,
+				9A2EF4FF1C7D4AC9006404BE /* NSObject+YYModel.m */,
+				9A2EF5001C7D4AC9006404BE /* YYClassInfo.h */,
+				9A2EF5011C7D4AC9006404BE /* YYClassInfo.m */,
+				9A2EF5021C7D4AC9006404BE /* YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 		9AEEC33C1C74458800A411C1 = {
@@ -841,6 +861,7 @@
 				9A050A381C74495200D4ACDC /* DataSaveListViewController.m in Sources */,
 				9A0509EB1C74494800D4ACDC /* OpenURLViewController.m in Sources */,
 				9A5BF2931C7AF20800D26778 /* LoginModel.m in Sources */,
+				9A2EF5041C7D4AC9006404BE /* YYClassInfo.m in Sources */,
 				9A050A431C74495200D4ACDC /* LoginSuccessViewController.m in Sources */,
 				9A0509F31C74494800D4ACDC /* WebViewRootController.m in Sources */,
 				9A050A4E1C744BBF00D4ACDC /* LyViewController.m in Sources */,
@@ -867,6 +888,7 @@
 				9A0509E81C74494800D4ACDC /* networkDemoViewController.m in Sources */,
 				9A0509FE1C74494800D4ACDC /* testB.m in Sources */,
 				9A050A541C744C0800D4ACDC /* LyDeepLink.m in Sources */,
+				9A2EF5031C7D4AC9006404BE /* NSObject+YYModel.m in Sources */,
 				9A050A5A1C74542600D4ACDC /* LoginApi.m in Sources */,
 				9A050A481C74495200D4ACDC /* Bee_Sandbox.mm in Sources */,
 				9A0509F51C74494800D4ACDC /* EasemobAccountBean.m in Sources */,
