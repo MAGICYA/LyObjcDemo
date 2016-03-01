@@ -37,6 +37,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //master
     // Override point for customization after application launch.
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -181,6 +182,7 @@
     //保存到剪贴板
 
 //    [BSAlertUtil showChoiceMessage:@"" message:[NSString stringWithFormat:@"deviceId %@ deviceToken %@",[UIDevice currentDevice].uniqueDeviceIdentifier,deviceToken] leftText:@"确定" rightText:nil leftEvent:nil rightEvent:nil];
+    
     return;
 }
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
